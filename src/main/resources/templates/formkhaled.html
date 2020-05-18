@@ -1,0 +1,72 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<title>ENISO</title>
+</head>
+<body>
+	<div class="container">
+		<form action="#" method="post" th:action="@{/form}"
+			th:Object="${etudient}">
+			<h2 class="mt-4">Eniso</h2>
+			<hr />
+			<div class="form-group row ">
+				<div class="col-sm-8">
+					<span class="text-danger"> </span>
+				</div>
+			</div>
+			<div class="form-group row ">
+				<label for="title" class="col-sm-2 col-form-label">Nom</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" th:field="*{name}">
+				</div>
+				<div class="col-sm-4">
+					<span class="text-danger"> </span>
+				</div>
+			</div>
+			<div class="form-group row ">
+				<label for="title" class="col-sm-2 col-form-label">Prenom</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" placeholder=""
+						th:field="*{prename}">
+				</div>
+				<div class="col-sm-4">
+					<span class="text-danger"> </span>
+				</div>
+			</div>
+
+			<div class="form-group row ">
+				<label for="rating" class="col-sm-2 col-form-label mr-0">password</label>
+				<div class="col-sm-4">
+					<input type="password" class="form-control" placeholder=""
+						th:field="*{password}">
+				</div>
+				<div class="col-sm-4">
+					<span class="text-danger"> </span>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-10">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+		
+	</script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+		
+	</script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+		
+	</script>
+</body>
+</html>
